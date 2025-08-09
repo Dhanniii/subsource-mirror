@@ -1,0 +1,28 @@
+/* styles for button components */
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.join-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.join-button:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,32 @@
+/* Features component styles */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.feature {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.feature-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    font-size: 1em;
+    color: #555;
+}

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.452)),
+                url('https://cdn.discordapp.com/attachments/1397420970767024168/1402576679972507740/banner.webp?ex=68946ad3&is=68931953&hm=9347b7513e2798fc0f4964b41a20da729ea87214fef11ebb8d00fae56021f3ed&');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* Changed from center to flex-start */
+    text-align: left;  /* Changed from center to left */
+    padding: 4rem;  /* Increased padding for better spacing */
+}
+
+.header-content {
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 600px;
+    padding: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ffffffbf;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.6),
+        0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    
+    color: rgba(235, 186, 87, 0.725);
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    text-shadow: 
+        1px 1px 3px rgba(0, 0, 0, 0.7),
+        0 0 15px rgba(255, 187, 51, 0.2);
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.features-list li {
+    margin-bottom: 0.7rem;
+    font-size: 1.rem;
+    color: #ffffffbf;
+
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.features-list li::before {
+    content: "•";
+    color: rgba(255, 187, 51, 0.618);
+    font-weight: bold;
+    margin-right: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.join-button, .login-button {
+    padding:5px 10px;
+    font-size: 1.0rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.join-button {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.login-button {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.join-button:hover, .login-button:hover {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+    transform: translateY(-2px);
+}
+
+.join-button:active, .login-button:active {
+    transform: translateY(0);
+}
+
+.game-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+                url('https://cdn.discordapp.com/attachments/1397420970767024168/1402600492520968333/1754476319-picsay.jpg?ex=68948100&is=68932f80&hm=acb6d57d135e925a0dddf4b1bb3d8a24e9a39a4502954d1347b9a669587b666a&');
+    background-size: cover; /* Changed from contain to cover */
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Prevent any potential overflow */
+}
+
+/* Add a media query to handle very wide screens */
+@media screen and (min-width: 1920px) {
+    .game-section {
+        background-size: 100% auto;
+    }
+}
+
+.game-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.4rem;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.6),
+        0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.game-subtitle {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: rgba(235, 186, 87, 0.9);
+    margin-bottom: 2rem;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    text-shadow: 
+        1px 1px 3px rgba(0, 0, 0, 0.7),
+        0 0 15px rgba(255, 187, 51, 0.2);
+}
+
+.play-button {
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Cinzel', serif;
+}
+
+.play-button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.background-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; /* Add some spacing */
+}
+
+.background-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+}
+
+.banner-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    padding: 2rem;
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif; /* Standard font */
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: #888888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer p {
+    line-height: 1.6;
+    color: #888888;
+}

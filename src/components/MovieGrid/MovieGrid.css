@@ -1,0 +1,36 @@
+.movies-section {
+    padding: 2rem 1rem;
+    background-color: #000000;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.movies-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.6),
+        0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 170px); /* Fixed width columns */
+    gap: 1rem; /* Increased gap between cards */
+    justify-content: center; /* Center the grid */
+    margin: 0 auto;
+    padding: 0;
+    max-width: fit-content; /* Adjust container to content */
+}
+
+@media (max-width: 768px) {
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 0.75rem; /* Slightly smaller gap for mobile */
+    }
+}

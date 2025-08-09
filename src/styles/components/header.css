@@ -1,0 +1,26 @@
+.header {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px; /* Padding around the header */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+.header h1 {
+    font-size: 24px; /* Header title font size */
+    color: #343a40; /* Dark text color */
+}
+
+.header nav {
+    display: flex; /* Flexbox layout for navigation */
+}
+
+.header nav a {
+    margin-left: 15px; /* Space between navigation links */
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+}
+
+.header nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
