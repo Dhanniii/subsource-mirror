@@ -1,4 +1,4 @@
-# Subsource-miirror - Subtitle Download Platform
+# Subsource-mirror - Subtitle Download Platform
 
 A modern web application for discovering and downloading subtitles for movies and TV series. Built with React.js frontend and Flask Python backend.
 
