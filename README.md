@@ -2,7 +2,7 @@
 
 A modern web application for discovering and downloading subtitles for movies and TV series. Built with React.js frontend and Flask Python backend.
 
-![PaheSubs Banner](https://cdn.discordapp.com/attachments/1397420970767024168/1403292192671272960/1754639327-picsaygh.jpg)
+![subsource-mirror Banner](https://cdn.discordapp.com/attachments/1397420970767024168/1403292192671272960/1754639327-picsaygh.jpg)
 
 ## 🌟 Features
 
@@ -29,7 +29,7 @@ A modern web application for discovering and downloading subtitles for movies an
 ## 📁 Project Structure
 
 ```
-pahesubs/
+subsource-mirror/
 ├── public/
 │   ├── index.html
 │   └── banner.webp
@@ -359,7 +359,7 @@ pahesubs/
 ### Frontend Setup
 ```bash
 # Navigate to project directory
-cd pahesubs
+cd subsource-mirror
 
 # Install dependencies
 npm install
@@ -407,7 +407,7 @@ pip install requests==2.31.0
 Edit `src/utils/constants.js`:
 ```javascript
 export const API_URL = 'http://127.0.0.1:5000';
-export const APP_NAME = 'PaheSubs';
+export const APP_NAME = 'subsource-mirror';
 ```
 
 ### CORS Settings
