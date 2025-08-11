@@ -14,18 +14,56 @@
 }
 
 .movie-poster {
-    position: relative;
-    padding-top: 150%; /* 2:3 aspect ratio */
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 150%; /* 2:3 aspect ratio */
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  border-radius: 8px;
 }
 
 .movie-poster img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Jika gambar gagal load, tampilkan placeholder dengan CSS */
+.movie-poster.no-image {
+  background: linear-gradient(135deg, #333, #555);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-poster.no-image::before {
+  content: "🎬";
+  font-size: 3rem;
+  color: #666;
+}
+
+/* Tambahkan loading state */
+.movie-poster.loading {
+  background: linear-gradient(
+    90deg,
+    #1a1a1a 0%,
+    #2a2a2a 50%,
+    #1a1a1a 100%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 .movie-overlay {

@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [query, setQuery] = useState('');
   const navigate = useNavigate();
 
   const genres = [
@@ -22,18 +23,27 @@ const Navbar = () => {
     window.open('https://www.imdb.com/chart/top/', '_blank');
   };
 
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    const q = query.trim();
+    if (!q) return;
+    navigate(`/search?q=${encodeURIComponent(q)}`);
+  };
+
   return (
     <nav className="navbar">
       <div className="logo" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
         <h1>Amicia</h1>
       </div>
-      <div className="search-container">
+      <form className="search-container" onSubmit={handleSearchSubmit}>
         <input 
           type="text" 
           className="search-input" 
           placeholder="Search Your Favorite Subtitles"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
         />
-      </div>
+      </form>
       <div className="nav-buttons">
         <button className="nav-button">
           <FontAwesomeIcon icon={faClock} className="nav-icon" /> Latest

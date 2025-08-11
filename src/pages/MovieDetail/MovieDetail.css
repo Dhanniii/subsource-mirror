@@ -133,29 +133,139 @@
   font-size: 1.1rem;
 }
 
+.loading-message, .error-message {
+  text-align: center;
+  padding: 3rem;
+  color: #ffffff;
+}
+
+.error-message h2 {
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+}
+
+.error-message p {
+  color: #cccccc;
+}
+
+.detail-rating {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.detail-votes {
+  color: #888;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.detail-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.detail-genres .genre-tag {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.detail-links {
+  margin-top: 1.5rem;
+}
+
+.imdb-link {
+  display: inline-block;
+  background: #f5c518;
+  color: #000;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.imdb-link:hover {
+  background: #e6b800;
+}
+
+.no-subtitles {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+  font-style: italic;
+}
+
+.caption-cell {
+  max-width: 300px;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Language flags and styling */
+.language-tag {
+  margin-right: 0.5rem;
+}
+
+/* Responsive design for mobile */
 @media (max-width: 768px) {
   .detail-info-section {
     flex-direction: column;
-    gap: 2rem;
-  }
-
-  .detail-poster-container {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-
-  .detail-title {
-    font-size: 2rem;
+    gap: 1.5rem;
   }
   
-  .detail-content-wrap {
-    padding: 1.5rem;
+  .detail-poster-container {
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
   }
-
+  
   .detail-subtitle-table {
-    display: block;
-    overflow-x: auto;
+    font-size: 0.8rem;
   }
+  
+  .caption-cell {
+    max-width: 150px;
+  }
+}
+
+.download-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+.download-button:active {
+  background-color: #3d8b40;
+}
+
+/* Adjust table to accommodate the new column */
+.detail-subtitle-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.detail-table-cell {
+  /* ... existing styles ... */
+  padding: 12px 8px;
+}
+
+/* Style for the action column */
+.detail-table-cell:last-child {
+  text-align: center;
+  width: 100px;
 }
