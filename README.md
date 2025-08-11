@@ -1,4 +1,4 @@
-# PaheSubs - Subtitle Download Platform
+# Subsource-miirror - Subtitle Download Platform
 
 A modern web application for discovering and downloading subtitles for movies and TV series. Built with React.js frontend and Flask Python backend.
 
@@ -376,7 +376,7 @@ npm start
 pip install -r requirements.txt
 
 # Run Flask API
-python py.py
+python Flask.py
 
 # API will be available at http://127.0.0.1:5000
 ```
